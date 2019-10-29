@@ -1,4 +1,4 @@
-package com.fd.kotlin.Databinding.fragment
+package com.fd.kotlin.databinding.fragment
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle

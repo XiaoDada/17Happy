@@ -1,9 +1,9 @@
-package com.fd.kotlin.Databinding
+package com.fd.kotlin.databinding
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.FrameLayout
-import com.fd.kotlin.Databinding.fragment.DatabindingFragment
+import com.fd.kotlin.databinding.fragment.DatabindingFragment
 import com.fd.kotlin.R
 
 /**

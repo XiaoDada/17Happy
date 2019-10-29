@@ -1,17 +1,14 @@
 package com.fd.kotlin
 
 import android.content.Intent
-import android.graphics.drawable.Drawable
-import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.widget.ImageView
 import android.widget.Toast
-import com.fd.kotlin.Databinding.DataBindingFragActivity
-import com.fd.kotlin.Databinding.DatabindingActivity
+import com.fd.kotlin.databinding.DataBindingFragActivity
+import com.fd.kotlin.databinding.StartActivity
 import com.fd.kotlin.adapter.ListDataAdapter
 import com.fd.kotlin.constant.Constant
 import com.gsww.kotlin.entity.TopObj
@@ -55,7 +52,7 @@ class MianActivity : AppCompatActivity() {
           mRelView.adapter=listAdapter
         listAdapter?.setItemClickListener(object :ListDataAdapter.ItemClickListener{
             override fun onItemClickListener(t: TopObj.TopLine) {
-                startActivity(Intent(this@MianActivity,DatabindingActivity::class.java))
+                startActivity(Intent(this@MianActivity, StartActivity::class.java))
             }
         })
         mIvImg.setOnClickListener {
@@ -80,8 +77,6 @@ class MianActivity : AppCompatActivity() {
                  }else{
                      Toast.makeText(baseContext,topObj.msg,Toast.LENGTH_SHORT).show()
                  }
-
-
              }
 
              override fun onStart(request: Request<String, out Request<Any, Request<*, *>>>?) {
