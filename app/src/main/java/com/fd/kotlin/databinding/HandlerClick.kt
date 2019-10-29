@@ -22,6 +22,7 @@ class HandlerClick {
         list.add("http://03imgmini.eastday.com/mobile/20191028/20191028164714_7e301f92c560751fc3905f9ebd27bfcc_3_mwpm_03200403.jpg")
         list.add("http://05imgmini.eastday.com/mobile/20191028/20191028164721_cc86c51751917c811b208403b41b8fae_1_mwpm_03200403.jpg")
         val random= Random().nextInt(4)
+        image.url!!.set(list.get(random))
 //        image.url.set(list.get(random))
     }
 

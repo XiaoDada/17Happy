@@ -11,10 +11,16 @@ import android.databinding.ObservableField
  */
 class Image(url:String) {
     var url: ObservableField<String>? = null
+        get() = field
+        set(value) {
+            field = value
+        }
 
     init {
         this.url = ObservableField(url)
     }
+
+
 
 
 }
