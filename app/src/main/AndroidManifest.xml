@@ -68,6 +68,7 @@
         <activity android:name=".databinding.StartActivity" />
         <activity android:name=".databinding.BindingAdapterActivity" />
         <activity android:name=".databinding.DataBindingReLActivity" />
+        <activity android:name=".viewmoudle.ViewMoudleActivity" />
 
     </application>
 

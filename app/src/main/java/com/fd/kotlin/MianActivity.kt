@@ -11,6 +11,7 @@ import com.fd.kotlin.databinding.DataBindingFragActivity
 import com.fd.kotlin.databinding.StartActivity
 import com.fd.kotlin.adapter.ListDataAdapter
 import com.fd.kotlin.constant.Constant
+import com.fd.kotlin.viewmoudle.ViewMoudleActivity
 import com.gsww.kotlin.entity.TopObj
 import com.lzy.okgo.OkGo
 import com.lzy.okgo.callback.StringCallback
@@ -56,7 +57,7 @@ class MianActivity : AppCompatActivity() {
             }
         })
         mIvImg.setOnClickListener {
-            startActivity(Intent(this@MianActivity, DataBindingFragActivity::class.java))
+            startActivity(Intent(this@MianActivity, ViewMoudleActivity::class.java))
         }
 
     }
